@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  background-color: royalblue;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.guess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.guess input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.guess button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: steelblue;
+  color: #fff;
+  width: 80%;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#moves {
+  color: red;
+  font-size: 20px;
+}
+#myNum {
+  color: aqua;
+}
+#error{
+    color: red;
+    display: none;
+}
+#error.active{
+    display: block;
+}
+#success {
+  margin-top: 1rem;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#success.active {
+  display: block;
+}
+#restart {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 1rem;
+  background-color: blueviolet;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+#restart.activate {
+  display: block;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
